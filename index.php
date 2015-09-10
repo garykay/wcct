@@ -30,6 +30,7 @@ if ( ! class_exists( 'WCCT_Customizer' ) ) {
 			add_action( 'customize_register', array( $this, 'add_controls' ) );
 
 			add_action( 'layers_after_header_nav', array( $this, 'display_social' ) );
+
 			add_action( 'layers_after_header_nav', array( $this, 'display_search' ) );
 
 			add_action( 'customize_preview_init', array( $this, 'live_preview' ) );
@@ -41,7 +42,7 @@ if ( ! class_exists( 'WCCT_Customizer' ) ) {
 		function add_panels( $wp_customize ){
 
 			$wp_customize->add_panel( 'wcct_panel', array(
-				'priority' => 10,
+				'priority' => 100,
 				'capability' => 'edit_theme_options',
 				// 'theme_supports' => '',
 				'title' => __( 'WCCT Panel', 'wcct-customizer' ),
