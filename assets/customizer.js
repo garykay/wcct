@@ -45,4 +45,18 @@
         } );
     });
 
+    wp.customize( 'wcct_show_search', function( value ) {
+
+        value.bind( function( to ) {
+
+            var $form = $( '#wcct-search-from' );
+
+            if ( false == to ){
+                $form.fadeOut();
+            } else {
+                $form.fadeIn()
+            }
+        } );
+    });
+
 })( jQuery );
