@@ -1,0 +1,17 @@
+.wcct-social-icons {
+    clear: both;
+    width: 100px;
+    margin-top: 8px;
+}
+.wcct-social-icons img{
+    max-width: 25px;
+}
+
+.wcct-search-from label,.wcct-search-from input[type="submit"]{
+    float: left;
+    clear: none;
+    margin-right: 5px;
+}
+.wcct-search-from input[type="submit"]{
+    margin-top: 4px;
+}
